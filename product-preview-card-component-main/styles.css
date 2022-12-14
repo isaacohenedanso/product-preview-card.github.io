@@ -1,0 +1,131 @@
+/* desktop design */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container figure {
+  display: flex;
+  width: 520px;
+  border-radius: 5px;
+  height: 400px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.container figure img.desktop-image {
+  border-radius: 5px 0 0 5px;
+}
+
+.container figure img.mobile-image {
+  display: none;
+}
+
+.container figure figcaption {
+  margin: 0 5% 5% 5%;
+}
+
+.container figure figcaption h5 {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.container figure figcaption h1 {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.container figure figcaption p {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  /* word-spacing: 4px; */
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.container figure figcaption .price {
+  display: flex;
+  align-items: center;
+}
+
+.container figure figcaption .price h1 {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  margin-right: 5%;
+}
+.container figure figcaption .price .cancelled {
+  text-decoration: line-through;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.container figure figcaption .cart {
+  text-decoration: none;
+  display: flex;
+  background-color: hsl(158, 36%, 37%);
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.container figure figcaption .cart:hover,
+.container figure figcaption .cart:focus {
+  background-color: hsla(158, 36%, 37%, 0.8);
+}
+
+.container figure figcaption .cart h3 {
+  color: hsl(0, 0%, 100%);
+  margin-left: 5%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+}
+
+/* mobile design */
+@media screen and (max-width: 375px) {
+  .container figure {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+  }
+
+  .container figure img.desktop-image {
+    display: none;
+  }
+  .container figure img.mobile-image {
+    display: block;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+  .container figure figcaption {
+    padding: 5%;
+  }
+
+  .container figure figcaption h5 {
+    margin: 3px 0;
+  }
+  .container figure figcaption h1 {
+    font-size: xx-large;
+    margin: 3px 0;
+  }
+
+  .container figure figcaption p {
+    font-size: 0.85rem;
+  }
+
+  .container figure figcaption .cart img {
+    width: 15px;
+    height: 15px;
+  }
+}
