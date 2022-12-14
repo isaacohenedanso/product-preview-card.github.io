@@ -37,9 +37,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/isaacohenedanso/product-preview-card.github.io/tree/main/product-preview-card-component-main](https://github.com/isaacohenedanso/product-preview-card.github.io/tree/main/product-preview-card-component-main)
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [at https://isaacohenedanso.github.io/product-preview-card.github.io/product-preview-card-component-main](https://isaacohenedanso.github.io/product-preview-card.github.io/product-preview-card-component-main)
 
 ## My process
 
